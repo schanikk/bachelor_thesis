@@ -6,67 +6,73 @@
 
 
 % want quotes?
-\begin{savequote}[8cm]
-Computers are incredibly fast, accurate and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination
+%\begin{savequote}[8cm]
+%Computers are incredibly fast, accurate and stupid; humans are incredibly slow, %inaccurate, and brilliant; together they are powerful beyond imagination
 %
-\qauthor{--- Albert Einstein}
+%\qauthor{--- Albert Einstein}
 %
-\end{savequote}
+%\end{savequote}
 
 \chapter{Introduction}\label{ch:1-intro}%
 %
 
-% want an abstract per chapter??
-\begin{chapterabstract}
-  \kant[4]
-\end{chapterabstract}
-
-% want a toc per chapter??
-\minitoc
-
 % here goes the content
-\kant[5]
-Some very important \index{Concept}concept is explained here. See \autoref{fig:sample}.
+In this chapter of the thesis, we will first cover the motivation of our thesis and the importance of natural language processing, with a specific focus on topic modeling.
+Following the motivation, we will discuss the problem that this thesis aims to address and solve, as well as the research questions we seek to answer.
 
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=.6\linewidth]{neuron}
-  \caption[A neuron. Some shorter caption for the LOF]{A neuron. And some potentially very long caption for an image or table.}\label{fig:sample}
-\end{figure}
+\section{Motiviation}
+While social media platforms like Facebook, Twitter, and Instagram were initially used for personal connection among friends and family, they have since then evolved into influential spaces for political discourse and public opinion placement.
+Especially during elections, social media platforms, in recent years, have been excessively used as a platform for political discourses by users.
 
-\section{A}
-\kant[6-10]
+In Germany, recent events such as the the dissolution of the governing coalition and the recent events in the German economy as well as events in Europe have further polarized public opinion.
+Especially on social media platforms, this division is even more visible than ever before, and politicians leverage social media platforms to generate content and distribute their viewpoints on different topics to run election campaigns and attract voters for their party.
 
-\section{B}
-\kant[11]
+The amount of textual data produced on these platforms, especially during the election period cannot be captured by a single individual, making it difficult to analyze and extract meaningful insights into the voter's concerns.
+However, in recent years Natural Language Processing (NLP) advanced significantly due to the theoretical advancement through the transformer architecture, as well as the technical advances such as the incredible improvement of the utilization of Graphics processing unit (GPU) in deep learning architectures.
+Natural Language Processing (NLP) is now being adopted in almost every field, and enables a horizontal layer across all domains.
+These developments made it possible to handle large textual datasets and extract richer semantic information from text.
+By applying Natural Language Processing (NLP), this amount of data can be used, to gain insights into the voter's interests and concerns, and understand how the public responds during the election period in Germany. Topic modeling is a tool that can be used to analyze different topics, patterns, and hidden structures within large collections of textual data. Thus making it useful for analyzing how the topic frequency changes over time as well as capturing changes in the content of different topics within the election period.
 
-\subsection{BA}
-\kant[12-14]
+\section{Problem Statement}\label{ch:1-problem}
 
-\subsection{BB}
-\kant[14-16]
-Some very important \index{Concept}concept is explained again. See \autoref{tab:sample}.
+Existing research and studies primarily focus on static analytics during elections, thus they do not incorporate, how the political discourse changes over time during election campaigns. Static Analysis makes it difficult to capture temporal changes of public opinions, especially with the current development of the political discourse, which has shown increased usage of populist debates.
+This thesis tries to solve this gap by applying time-sensitive topic modeling to election-related social media data. The problem is to analyze how political topics evolve over time during the election campaign. Understanding these patterns can help policymakers understand the citizen's concerns, and understand the impact of external events on the public narrative.
 
-\begin{table}
-  \centering
-  \begin{tabular}{lll}
-    \toprule
-     & A & B \\
-    \midrule
-    C & 1 & 2 \\
-    D & 3 & 4 \\
-    \bottomrule
-  \end{tabular}\caption[shorter caption]{potentially very long caption}\label{tab:sample}
-\end{table}
 
-\subsubsection{BBA}
-\kant[16-18]
+\subsection{Research Questions}
 
-\subsubsection{BBB}
-\kant[18-20]
+The problem, mentioned in Section \ref{ch:1-problem}, opens up several research questions. Since most analyses on social media platforms perform static topic modeling on generated content, this paper will try to answer the question of how topic modeling can be used to analyze temporal content during election periods, especially during the German election period until the early parliamentary elections on the 23rd of February 2025. This opens up the first research questions, which can be formulated as follows: \\
 
-\section{C}
-\kant[20-23]
+\textbf{1. How can topic modeling be utilized on temporal textual data to analyze public opinions during election campaigns?}\\
+
+This Research question opens up further questions, such as:\\
+
+\textbf{2. How does the importance of political topics change over time during the official election?}\\
+
+as well as:\\
+
+\textbf{3. How do semantics and sentiments of topics evolve during the election period?}\\
+
+Answering these questions in this thesis should help policymakers and journalism better understand the concerns and opinions of the public and improve the democratical understanding.
+
+%3. How do external events influence the political discourse on social media platforms?\\
+
+
+\subsection{Structure of this Thesis}
+
+In the following chapters of this thesis, we will first familiarize us with the required theoretical knowledge needed, to 
+
+%\begin{table}
+%  \centering
+%  \begin{tabular}{lll}
+%    \toprule
+%     & A & B \\
+%    \midrule
+%    C & 1 & 2 \\
+%    D & 3 & 4 \\
+%    \bottomrule
+%  \end{tabular}\caption[shorter caption]{potentially very long %caption}\label{tab:sample}
+%\end{table}
 
 %%%% %%%%%%%%% %%%%%%%%% %%%%%%%%% %%%%%%%%%
 %%%%%%%%% %%%%%%%%% %%%%%%%%% %%%%%%%%% %%%%
